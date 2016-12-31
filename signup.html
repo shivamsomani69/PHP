@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="gr__127_0_1_1 gr__">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+	<title>Signup</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="animate.css"/>
+	<style>
+		hr{
+				box-shadow:1px 1px 5px 1px white;
+			}
+		input[type='submit']:hover{
+			box-shadow:1px 1px 8px 1px #222;
+		}
+		input[type='submit']{
+			font-size:1.2em;
+			width:167px;
+		}
+		label,h4{
+			color:white;
+		}
+		body{
+			background-size:cover;
+			background-position:center;
+			background-image:url('images/background3.jpg');
+			background-repeat:no-repeat;
+			background-attachment:fixed;
+		}
+	</style>
+</head>
+<body>
+	<br/><br/>
+	<div class="container">
+		<form class="form swing" method="POST" action="signup.php">
+			<div class="row">
+			<div class="col-sm-4">
+				<header>
+						<h4>Signup Form</h4>
+					<hr/>
+				</header>
+				<div class="form-group">
+					<label>Name</label>
+						<input class="form-control" placeholder="Shubham Ivane" name="name" required="This Field is mandatory." type="text">
+				</div>
+				<div class="form-group">
+					<label>Email Address</label>
+						<input class="form-control" placeholder="example@domain.com" name="email" required="This Field is mandatory." type="text">
+				</div>
+				<div class="form-group">
+					<label>Username</label>
+						<input class="form-control" placeholder="ivaneshubham" name="username" required="This Field is mandatory." type="text">
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+						<input class="form-control" placeholder="xxxxxxxxxxxx" name="password" required="This Field is mandatory." type="password">
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label>Date of Birth</label>
+							<input class="form-control" placeholder="DD-MM-YYYY" name="dob" required="This Field is mandatory." type="text">
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label>Gender</label>
+							<select name="gender" class="form-control">
+							<option value="false">Select</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+				<input value="Signup" id="submit" type="submit">
+				</div>
+			</div>
+			</div>
+	</form>
+	</div>
+</body>
+</html>

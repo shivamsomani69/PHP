@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" href="bootstrap/animate.css"/>
+		<style>
+			hr{
+				box-shadow:1px 1px 5px 1px white;
+			}
+			input[type='submit']:hover{
+				box-shadow:0.5px 0.5px 2px 0.5px white;
+			}
+			label,h4{
+				color:white;
+			}
+			html,body{
+				background-size:cover;
+				background-position:center;
+				background-image:url('images/background3.jpg');
+				background-repeat:no-repeat;
+				background-attachment:fixed;
+			}
+		</style>
+	</head>
+<body>
+	<br/><br/><br/><br/><br/>
+	<div class="container">
+		<form class="form" method="POST" action="login.php">
+			<div class="row">
+				<div class="col-sm-4">
+					<header>
+						<h4>Login Form</h4><hr/>
+					</header>
+					<div class="form-group">
+						<label>Username</label>
+						<label class="sr-only">Username</label>
+							<input class="form-control" placeholder="Username" required="This Field is mandatory." name="username" type="text"/>
+					</div>
+					<div class="form-group">
+							<label>Password</label>
+							<input class="form-control" placeholder="Password" required="This Field is mandatory." name="password" type="password"/>
+					</div>
+					<br/>
+					<div class="form-group">
+								<input class="form-control" value="Login" type="submit"/>
+					</div>
+					<label>New User click <a href="signup.html">Here</a> for Signup.</label>
+				</div>
+			</div>
+		</form>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+	</div>
+</body>
+</html>
