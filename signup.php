@@ -17,5 +17,7 @@
 	else{
 		echo "Data can not be added.";
 	}
+	sleep(3);
+	header('Location: http://127.0.0.1/PHP/login.html');
 	$conn->close();
 ?>
